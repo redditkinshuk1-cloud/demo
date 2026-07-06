@@ -7,14 +7,14 @@
 <meta name="description" content="Review your cart and place your order for Walls & Wallets metro card skins.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <nav class="nav">
   <div class="nav-inner">
-    <a href="index.html" class="logo">Walls <span>&amp;</span> Wallets</a>
+    <a href="index.html" class="logo"><span class="logo-chip" aria-hidden="true"></span>Walls <span>&amp;</span> Wallets</a>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
@@ -22,9 +22,12 @@
     </div>
     <div class="nav-right">
       <a href="checkout.html" class="cart-btn" aria-label="Cart">
-        🛒 Cart <span class="cart-badge">0</span>
+        <svg class="ic-svg" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 4h2l1.6 9.6a2 2 0 0 0 2 1.7h7.5a2 2 0 0 0 2-1.6L19.5 8H6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="19.5" r="1.4" fill="currentColor"/><circle cx="16.5" cy="19.5" r="1.4" fill="currentColor"/></svg>
+        Cart <span class="cart-badge">0</span>
       </a>
-      <button class="burger" aria-label="Menu">☰</button>
+      <button class="burger" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
     </div>
   </div>
 </nav>
@@ -47,6 +50,8 @@
   </div>
 
   <div class="summary">
+    <span class="ticket-notch ticket-notch-left"></span>
+    <span class="ticket-notch ticket-notch-right"></span>
     <h3>Order summary</h3>
     <div class="summary-row"><span>Items</span><span id="itemCountVal">0</span></div>
     <div class="summary-row"><span>Subtotal</span><span id="subtotalVal">₹0</span></div>
@@ -78,7 +83,7 @@
 <footer>
   <div class="wrap footer-grid">
     <div class="footer-brand">
-      <a href="index.html" class="logo">Walls <span>&amp;</span> Wallets</a>
+      <a href="index.html" class="logo"><span class="logo-chip" aria-hidden="true"></span>Walls <span>&amp;</span> Wallets</a>
       <p>Metro card skins for Delhi commuters who'd rather stand out than blend in. Started by three friends, run on WhatsApp.</p>
     </div>
     <div class="footer-col">
